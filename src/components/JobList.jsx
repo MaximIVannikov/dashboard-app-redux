@@ -11,6 +11,7 @@ const JobList = () => {
     const positions = useSelector(state =>
         selectVisiblePositions(state, currentFilters),
     );
+    console.log('');
 
     const handleAddfilter = filter => {
         dispatch(addFilter(filter));
